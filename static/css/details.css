@@ -1,0 +1,217 @@
+/*.wrapper {*/
+/*    background: #0B0C10;*/
+/*    opacity: 0.95;*/
+/*    height: 400px;*/
+/*    width: 1000px;*/
+/*    border-radius: 7px 7px 7px 7px;*/
+/*    box-shadow: 0 0 1.5px 3px gray;*/
+/*    margin: 30px auto 100px;*/
+
+/*}*/
+
+.wrapper {
+    background: #0B0C10;
+    opacity: 0.95;
+    height: 500px;
+    width: 800px;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0 0 1.5px 3px gray;
+    margin: 30px auto 100px;
+
+}
+
+.wrapper-team-members {
+    float: left;
+    background: #0B0C10;
+    opacity: 0.95;
+    height: 500px;
+    width: 800px;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0 0 1.5px 3px gray;
+    /*margin: 50px 25px 100px;*/
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-right: 25px;
+
+}
+
+.wrapper-team-statistics {
+    float: left;
+    background: #0B0C10;
+    opacity: 0.95;
+    height: 500px;
+    width: 400px;
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 0 0 1.5px 3px gray;
+    /*margin: 30px 25px 100px;*/
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+
+}
+
+
+.albumCover, .profilePage {
+    float: left;
+    /*display: inline-block;*/
+    height: 50%;
+    width: auto;
+    margin-right: 18px;
+    /*    background-color: #0B0C10;*/
+    /*opacity: 0.9;*/
+}
+
+.albumCover img, .profilePage img {
+    /*border-radius: 12px 0 0 7px;*/
+    border-radius: 7px;
+    height: 100%;
+
+}
+
+.team-page-Img {
+    /*border-radius: 12px 0 0 7px;*/
+
+    max-height: 100px;
+    max-width: 100px;
+
+    border: 2px solid white;
+    /*box-shadow: 0 0 15px 0 green;*/
+    padding: 5px;
+    border-radius: 10px;
+
+
+}
+
+.team-page-category {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+
+}
+
+.team-page-members {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    color: white;
+
+}
+
+.team-grid-info {
+    display: grid;
+    grid-template-columns: 20% 25% 50%;
+    grid-gap: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.team-grid-statistics {
+    display: grid;
+
+    grid-template-columns: 70% 30%;
+    grid-gap: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.profileTextLabel {
+    font-size: 20px;
+    color: white;
+    font-weight: normal;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.profileTextInfo {
+    font-size: 20px;
+    color: tan;
+    font-weight: bolder;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.profile-grid-info {
+    display: grid;
+    grid-template-columns: 35% 60%;
+    /*grid-gap: 5px;*/
+    margin-top: 10px;
+}
+
+.profile-grid-statistics {
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    grid-template-columns: 25% 30% 25% 15%;
+    grid-gap: 10px;
+    margin-top: 20px;
+    margin-left: 80px;
+
+}
+
+.grid-item {
+    margin-left: 5px;
+    font-size: 18px;
+    color: white;
+    alignment: left;
+}
+
+.profileText h1 {
+    color: gainsboro;
+    font-weight: normal;
+    font-size: 24px;
+    margin: 7px;
+    /*margin-top: 7px;*/
+    /*margin-bottom: 7px;*/
+    /*margin-left: 50px;*/
+}
+
+.albumText h3 {
+    font-size: 18px;
+    color: gray;
+    letter-spacing: 0.2em;
+    margin: 8px 0 0 18px;
+}
+
+
+.actionBtn {
+    display: flex;
+    text-align: center;
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: 0;
+}
+
+.actionBtn > a {
+    width: 200%;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b2845;
+    background-image: linear-gradient(315deg, #45a29e 0%, #0d324d 74%);
+    background-size: 200% 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    transition: 500ms;
+    color: white;
+    font-family: "Lato", serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.actionBtn > a:hover {
+    background-position: right;
+}
+
+
+

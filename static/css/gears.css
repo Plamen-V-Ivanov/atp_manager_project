@@ -1,0 +1,60 @@
+.gear, .gear2{
+    height: 100px;
+    width: 100px;
+    background: transparent;
+    box-shadow: inset 0 0 0px 35px dimgray, inset 0 0 0px 40px #444;
+    border-radius: 50%;
+    position: relative;
+    margin: 20px auto;
+    -webkit-animation: rotate 2.4s ease-out 1;
+    -moz-animation: rotate 2.4s ease-out 1;
+    animation: rotate 2.4s ease-out 1;
+}
+.gear:before, .gear:after, .gear2:before, .gear2:after {
+    height: 20px;
+    width: 20px;
+    content: '';
+    border-radius: 20%;
+    position: absolute;
+    background: dimgray;
+}
+.gear:before, .gear2:before{
+    box-shadow: 50px 50px 0 0 dimgray, -50px 50px 0 0 dimgray, 0 100px 0 0 dimgray;
+    top: -10px; left: 40px;
+}
+.gear:after, .gear2:after{
+    transform: rotate(45deg);
+    top: 5px; left: 76px;
+    box-shadow: 0px 100px 0 0 dimgray, 50px 50px 0 0 dimgray, -50px 50px 0 0 dimgray;
+}
+.gear2 {
+    top: -28px; left: 62px;
+    -webkit-animation: rotate2 2.4s ease-out 1;
+    -moz-animation: rotate2 2.4s ease-out 1;
+    animation: rotate2 2.4s ease-out 1;
+}
+/*Keyframes*/
+@-webkit-keyframes rotate {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(-360deg);}
+}
+@-moz-keyframes rotate {
+    0% {-moz-transform: rotate(0deg);}
+    100% {-moz-transform: rotate(-360deg);}
+}
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}
+@-webkit-keyframes rotate2 {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes rotate2 {
+    0% {-moz-transform: rotate(0deg);}
+    100% {-moz-transform: rotate(360deg);}
+}
+@keyframes rotate2 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}

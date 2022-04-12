@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>ATP Team Manager</title>
+
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.ico' %}"/>
+    <!-- Static Load -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+</head>
+
+<body>
+<div id="box">
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <img src="{% static 'images/logo_atp.png' %}" alt="ATP logo">
+            <a href="{% url 'home page' %}">Home</a>
+            <ul></ul>
+            <ul>
+                {% if profile %}
+                    <!--Only for user with created profile-->
+{#                    <li><a href="{% url 'profile active tasks' profile.pk %}">My Tasks</a></li>#}
+{#                    <li><a href="{% url 'show available tasks' %}">Available Tasks</a></li>#}
+{#                    <li><a href="{% url 'show running tasks' %}">Running Tasks</a></li>#}
+{#                    <li><a href="{% url 'suggest a task' %}">Suggest a Tasks</a></li>#}
+{#                    <li><a href="{% url 'show team' %}">Team</a></li>#}
+{#                    <li><a href="{% url 'show profile' profile.pk %}">Profile</a></li>#}
+
+                    <li><a href="{% url 'profile active tasks' 1 %}">My Tasks</a></li>
+                    <li><a href="{% url 'show available tasks' %}">Available Tasks</a></li>
+                    <li><a href="{% url 'show running tasks' %}">Running Tasks</a></li>
+                    <li><a href="{% url 'suggest a task' %}">Suggest a Tasks</a></li>
+                    <li><a href="{% url 'show team' %}">Team</a></li>
+                    <li><a href="{% url 'show profile' 1 %}">Profile</a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+    <!-- End Navigation Bar -->
+
+    {% block page_content %}
+
+        <!-- Main Content -->
+
+    {% endblock %}
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            &copy;Automation and Technology Team 2022. Design by Plamen Ivanov. All rights reserved.
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+</div>
+</body>
+</html>
