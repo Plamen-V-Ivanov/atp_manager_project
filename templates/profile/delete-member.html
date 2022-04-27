@@ -1,0 +1,25 @@
+{% extends 'base/base.html' %}
+{% block page_content %}
+
+    <!-- Delete Profile Page-->
+    <section id="detailsPage">
+        <div class="wrapper">
+            <div class="profileText">
+
+                <!-- Delete Profile Form -->
+                <h1>Pick a team member.</h1>
+                <form method="POST" action="{% url 'delete a profile' %}" enctype="multipart/form-data">
+                    <!-- Confirm Button -->
+
+                    {{ form }}
+                    {% csrf_token %}
+                    <h1>Are you sure you want to delete him/her?</h1>
+                    <button class="add-task" type="submit">Delete</button>
+                </form>
+                <!-- End Delete Profile Form -->
+
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

@@ -233,14 +233,14 @@
     box-sizing: border-box;
     border-radius: 15px;
     /*float: left;*/
-    height: 200px;
+    height: 180px;
     color: white;
     font-weight: bold;
     margin-bottom: 60px;
     margin-top: 15px;
     overflow: auto;
     display: grid;
-    grid-template-columns: 30% 20% 33% 14%;
+    grid-template-columns: 35% 20% 32% 10%;
     grid-gap: 10px;
 
 }
@@ -258,7 +258,7 @@
     border-radius: 10px;
     display: inline;
     align-items: center;
-    /*vertical-align: top;*/
+    vertical-align: top;
     justify-content: center;
     background-color: #1b2845;
     background-image: linear-gradient(315deg, #45a29e 0%, #0d324d 74%);
@@ -295,6 +295,7 @@
     transition: 500ms;
 }
 
+
 .task-info {
     margin-left: 5px;
     margin-top: 10px;
@@ -302,7 +303,7 @@
 
 
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 50% 60%;
     grid-gap: 5px;
 
 }
@@ -334,7 +335,7 @@
 .task-navbar {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 30px;
+    /*grid-gap: 30px;*/
 
     margin-left: 5px;
 
@@ -372,3 +373,48 @@ input[type=text]:hover {
 }
 
 
+.btn-group-task2 > a {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    vertical-align: top;
+    justify-content: center;
+    background-color: #1b2845;
+    background-image: linear-gradient(315deg, #45a29e 0%, #0d324d 74%);
+    background-size: 200% 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    transition: 500ms;
+    color: white;
+    font-family: "Lato", serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.btn-group-task2 > a:hover {
+    background-position: right;
+}
+
+.btn-group-task2 > a:before {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lato', serif;
+    position: absolute;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 30px;
+    background-color: #1b2845;
+    background-image: linear-gradient(315deg, #1b2845 0%, #274060 74%);
+    transition: 500ms;
+}

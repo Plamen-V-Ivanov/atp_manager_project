@@ -4,7 +4,7 @@
     <!--Create Page-->
     <section class="createPage">
 
-        <form method="POST" action="{% url 'suggest add' %}" enctype="multipart/form-data">
+        <form method="POST" action="{% url 'suggest a task' %}" enctype="multipart/form-data">
             <fieldset>
                 <legend>Suggest Task</legend>
                 <div class="container">
@@ -13,7 +13,7 @@
                     {% csrf_token %}
 
                     <!-- Button for Adding Album -->
-                    <button class="add-task" type="submit">Suggest New Album</button>
+                    <button class="add-task" type="submit">Suggest</button>
                 </div>
             </fieldset>
         </form>

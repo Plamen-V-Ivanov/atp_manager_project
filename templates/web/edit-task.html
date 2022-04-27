@@ -3,7 +3,7 @@
 
     <!--Edit Page-->
     <section class="editPage">
-        <form method="POST" action="{% url 'edit a task' 1 %}" enctype="multipart/form-data">
+        <form method="POST" action="{% url 'edit a task' task.pk %}" enctype="multipart/form-data">
             <fieldset>
                 <legend>Edit Task</legend>
                 <div class="container">

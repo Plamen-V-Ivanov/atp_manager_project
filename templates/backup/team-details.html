@@ -1,0 +1,159 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block page_content %}
+
+    <section id="detailsPage">
+
+        <div class="wrapper-team-members">
+
+            <div style="text-align: center; font-size: 30px; font-weight: bolder; color: white; margin-top: 30px; margin-bottom: 20px">
+                Team Members:
+            </div>
+
+            {#            starting the grid#}
+
+            <div class="team-grid-info">
+                <div class="team-page-category">
+                    Automation
+                </div>
+                <div>
+                    <img class="team-page-Img" src="{% static 'images/wp3610487.jpg' %}" alt="Automation Engineering image">
+                </div>
+                <div class="team-page-members">
+                    Plamen Ivanov, Pavel Pavlov, Petar Georgiev, Atanas Uzunov, Kiril Dragostinov
+                </div>
+
+            </div>
+
+            {#            first element #}
+
+            <div class="team-grid-info">
+                <div class="team-page-category">
+                    Electrical
+                </div>
+                <div>
+                    <img class="team-page-Img" src="{% static 'images/546188.jpg' %}" alt="Electrical Engineering image">
+                </div>
+                <div class="team-page-members">
+                    Plamen Ivanov, Pavel Pavlov, Petar Georgiev, Atanas Uzunov, Kiril Dragostinov
+                </div>
+
+            </div>
+
+
+            <div class="team-grid-info">
+                <div class="team-page-category">
+                    Mechanical
+                </div>
+                <div>
+                    <img class="team-page-Img" src="{% static 'images/eng-2.png' %}" alt="Mechanical Engineering image">
+                </div>
+                <div class="team-page-members">
+                    Plamen Ivanov, Pavel Pavlov, Petar Georgiev, Atanas Uzunov, Kiril Dragostinov
+                </div>
+
+            </div>
+
+
+            <div class="team-grid-info">
+                <div class="team-page-category">
+                    Graphics & Design
+                </div>
+                <div>
+                    <img class="team-page-Img" src="{% static 'images/design-line-graphic-design-graphics-wallpaper-preview.jpg' %}" alt="Graphics & Design image">
+                </div>
+                <div class="team-page-members">
+                    Plamen Ivanov, Pavel Pavlov, Petar Georgiev, Atanas Uzunov, Kiril Dragostinov
+                </div>
+
+            </div>
+
+
+            <div class="team-grid-info">
+                <div class="team-page-category">
+                    Operational
+                </div>
+                <div>
+                    <img class="team-page-Img" src="{% static 'images/1880092.jpg' %}" alt="Operational Technologist image">
+                </div>
+                <div class="team-page-members">
+                    Plamen Ivanov, Pavel Pavlov, Petar Georgiev, Atanas Uzunov, Kiril Dragostinov
+                </div>
+
+            </div>
+
+
+        </div>
+
+        {#        statistcs #}
+
+        <div class="wrapper-team-statistics">
+            <div style="text-align: center; font-size: 30px; font-weight: bolder; color: white; margin-top: 30px; margin-bottom: 20px">
+                Statistics:
+            </div>
+
+            <div class="team-grid-statistics">
+                <div class="profileTextLabel">
+                    Automation
+                </div>
+                <div class="profileTextInfo">
+                    {{ team.automation_tasks }}
+                </div>
+
+                <div class="profileTextLabel">
+                    Graphics & Design
+                </div>
+                <div class="profileTextInfo">
+                    16
+                </div>
+
+
+                <div class="profileTextLabel">
+                    Electrical
+                </div>
+                <div class="profileTextInfo">
+                    18
+                </div>
+
+                <div class="profileTextLabel">
+                    Mechanical:
+                </div>
+                <div class="profileTextInfo">
+                    20
+                </div>
+
+                <div class="profileTextLabel">
+                    Operational
+                </div>
+                <div class="profileTextInfo">
+                    38
+                </div>
+
+                <div class="profileTextLabel">
+                    Completed
+                </div>
+                <div class="profileTextInfo">
+                    100
+                </div>
+
+
+
+                <div class="profileTextLabel">
+                    Outstanding:
+                </div>
+                <div class="profileTextInfo">
+                    5
+                </div>
+                <div class="profileTextLabel">
+                    Active Now
+                </div>
+                <div class="profileTextInfo">
+                    20
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+{% endblock %}

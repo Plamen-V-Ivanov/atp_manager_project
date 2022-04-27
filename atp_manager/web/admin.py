@@ -15,4 +15,6 @@ class TasksInlineAdmin(admin.StackedInline):
 
 @admin.register(Task)
 class TaskAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('title', 'category')
+
+

@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+{% block page_content %}
+
+    <!--Edit Page-->
+    <section class="editPage">
+        <form method="POST" action="{% url 'delete a task' task.pk %}" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Delete Task</legend>
+                <div class="container">
+
+                    {{ form }}
+                    {% csrf_token %}
+
+                    <!-- Button for Deleting an Album -->
+                    <button class="delete-task" type="submit">Delete Task</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+{% endblock %}

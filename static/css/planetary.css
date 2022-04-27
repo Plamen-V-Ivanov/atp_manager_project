@@ -1,0 +1,85 @@
+@keyframes spin {
+  from {
+    transform:rotateZ(0deg);
+  }
+
+  to {
+     transform:rotateZ(-360deg);
+  }
+}
+
+/*html, body{*/
+/*  height:100%;*/
+/*}*/
+
+.gear-wrapper{
+		/*mine*/
+	background-color: white;
+	opacity: 0.85;
+	border-radius: 160px;
+
+	margin: 10px auto;
+		/*end*/
+	/*margin:5% auto;*/
+	width:324px;
+
+	height:324px;
+
+	animation-duration: 100s;
+	animation-name: spin;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+}
+.ring{
+	position:absolute;
+	top:0px;
+	left:0px;
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/20212/ring5.png');
+	width:324px;
+	height:324px;
+
+	animation-duration: 42s;
+	animation-name: spin;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+	animation-direction: reverse;
+}
+
+.sun{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:324px;
+	height:324px;
+
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/20212/sun2.png') center center no-repeat;
+	animation-duration: 18s;
+	animation-name: spin;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+	/*border-style: solid;*/
+}
+
+.planets div{
+	position: absolute;
+	height: 98px;
+	width:98px;
+	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/20212/planet2.png');
+	animation-duration: 12s;
+	animation-name: spin;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+	animation-direction: reverse;
+}
+.one{
+	top:172px;
+	left:196px;
+}
+.two{
+	top:13px;
+	left:122px;
+}
+.three{
+	top:156px;
+	left:21px;
+}

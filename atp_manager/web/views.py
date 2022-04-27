@@ -1,61 +1,95 @@
 from django.shortcuts import render
 
 
+from django.urls import reverse_lazy
+from django.views import generic as views
+
 # Create your views here.
-
-def get_profile():
-    profile = 1
-    # profile = None
-    return profile
+from atp_manager.web.forms import CreateTaskForm, EditTaskForm, DeleteTaskForm
 
 
-def show_index(request):
-    profile = get_profile()
-
-    if profile:
-        context = {
-            'profile': profile,
-            'profile.pk': 1
-        }
-
-        return render(request, 'home-with-profile.html', context)
-    else:
-        return render(request, 'home-no-profile.html')
-
-
-def show_profile(request, pk):
-    profile = get_profile()
-    context = {
-        'profile': profile,
-    }
-    return render(request, 'profile-details.html', context)
+# def get_profile():
+#     profile = 1
+#     # profile = None
+#     return profile
+#
+#
+# def show_index(request):
+#     profile = get_profile()
+#
+#     if profile:
+#         context = {
+#             'profile': profile,
+#             'profile.pk': 1
+#         }
+#
+#         return render(request, 'web/dashboard.html', context)
+#     else:
+#         return render(request, 'profile/login-page.html')
 
 
-def show_profile_tasks(request, pk):
-    profile = get_profile()
-    context = {
-        'profile': profile,
-    }
-    return render(request, 'profile-tasks.html', context)
+# def show_profile(request, pk):
+#     profile = get_profile()
+#     context = {
+#         'profile': profile,
+#     }
+#     return render(request, 'profile/profile-details.html', context)
 
 
-def show_available_tasks(request):
-    return render(request, 'available-tasks.html')
+# def show_profile_tasks(request, pk):
+#     profile = get_profile()
+#     context = {
+#         'profile': profile,
+#     }
+#     return render(request, 'profile/../../templates/wont_be_used/profile-tasks.html', context)
 
 
-def show_running_tasks(request):
-    return render(request, 'running-tasks.html')
+# def show_available_tasks(request):
+#     return render(request, 'web/available-tasks.html')
+#
+#
+# def show_running_tasks(request):
+#     return render(request, 'web/running-tasks.html')
+#
+#
+# def show_requested_tasks(request):
+#     return render(request, 'web/requested-tasks.html')
 
 
-def suggest_a_task(request):
-    return render(request, 'suggest-task.html')
-
-def add_a_note(request):
-    return render(request, 'add-note.html')
+# def show_my_tasks(request):
+#     return render(request, 'profile/../../templates/wont_be_used/profile-tasks.html')
 
 
-def show_team(request):
-    return render(request, 'team-details.html')
+# def show_closed_tasks(request):
+#     return render(request, 'profile/../../templates/wont_be_used/closed-tasks.html')
+
+
+# def suggest_a_task(request):
+#     return render(request, 'web/suggest-task.html')
+
+
+# def show_team(request):
+#     return render(request, 'web/team-details.html')
+
+#
+#
+# def suggest_task(request):
+#     return render(request, 'web/suggest-task.html')
+#
+#
+# def add_task(request):
+#     return render(request, 'web/add-task.html')
+#
+#
+# def edit_task(request):
+#     return render(request, 'web/edit-task.html')
+#
+#
+# def delete_task(request):
+#     return render(request, 'web/delete-task.html')
+#
+
+
 
 
 """

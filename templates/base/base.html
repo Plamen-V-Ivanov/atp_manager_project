@@ -18,25 +18,47 @@
     <header>
         <nav>
             <img src="{% static 'images/logo_atp.png' %}" alt="ATP logo">
-            <a href="{% url 'home page' %}">Home</a>
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'show team' %}">Team</a>
+
+
+
+            {% if request.user.is_authenticated %}
+
+                <a href="{% url 'show running tasks' %}">Running Tasks</a>
+                <a href="{% url 'show available tasks' %}">Available Tasks</a>
+                <a href="{% url 'show history' %}">History</a>
+
+            {% endif %}
+
+            {% if request.user.is_authenticated and request.user.is_staff %}
+
+                <a href="{% url 'add a task' %}">Add Task</a>
+                <a href="{% url 'add a profile' %}">Add Member</a>
+                <a href="{% url 'delete a profile' %}">Delete Member</a>
+
+            {% endif %}
+
+
+            {#                    <li><a href="{% url 'suggest a task' %}">Suggest a Tasks</a></li>#}
+
+            {#            <a href="{% url 'show closed tasks' %}">Closed Tasks</a>#}
+
+
+            {#            <a href="{% url 'show my tasks' 1 %}">My Tasks</a>#}
+
+
             <ul></ul>
             <ul>
-                {% if profile %}
-                    <!--Only for user with created profile-->
-{#                    <li><a href="{% url 'profile active tasks' profile.pk %}">My Tasks</a></li>#}
-{#                    <li><a href="{% url 'show available tasks' %}">Available Tasks</a></li>#}
-{#                    <li><a href="{% url 'show running tasks' %}">Running Tasks</a></li>#}
-{#                    <li><a href="{% url 'suggest a task' %}">Suggest a Tasks</a></li>#}
-{#                    <li><a href="{% url 'show team' %}">Team</a></li>#}
-{#                    <li><a href="{% url 'show profile' profile.pk %}">Profile</a></li>#}
 
-                    <li><a href="{% url 'profile active tasks' 1 %}">My Tasks</a></li>
-                    <li><a href="{% url 'show available tasks' %}">Available Tasks</a></li>
-                    <li><a href="{% url 'show running tasks' %}">Running Tasks</a></li>
-                    <li><a href="{% url 'suggest a task' %}">Suggest a Tasks</a></li>
-                    <li><a href="{% url 'show team' %}">Team</a></li>
-                    <li><a href="{% url 'show profile' 1 %}">Profile</a></li>
+
+                {% if request.user.is_authenticated %}
+
+                    <li><a href="{% url 'logout user' %}">Log Out</a></li>
+                    <li><a href="{% url 'profile details' request.user.id %}">Profile</a></li>
+
                 {% endif %}
+
             </ul>
         </nav>
     </header>

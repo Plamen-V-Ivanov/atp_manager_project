@@ -10,46 +10,102 @@
                 Team Members:
             </div>
 
-            {#            starting the grid#}
+
 
             <div class="team-grid-info">
                 <div class="team-page-category">
                     Automation
                 </div>
                 <div>
-                    <img class="team-page-Img" src="{% static 'images/wp3610487.jpg' %}" alt="Automation image">
+                    {% if web_settings.automation_engineering_image %}
+                        <img class="team-page-Img" src="{{ web_settings.automation_engineering_image }}"
+                             alt="Automation Engineering image">
+                    {% else %}
+                        <img class="team-page-Img" src="{% static 'images/wp3610487.jpg' %}"
+                             alt="Automation Engineering image">
+                    {% endif %}
                 </div>
                 <div class="team-page-members">
-                    Plamen Ivanov, Pavel Pavlov, Petar Georgiev, Atanas Uzunov, Kiril Dragostinov
+                    {% if automation_members_count == 1 %}
+                        {{ automation_members_count }} member
+                    {% elif automation_members_count == 0 %}
+                        -
+                    {% else %}
+                        {{ automation_members_count }} member
+                    {% endif %}
+
+                </div>
+                <div class="team-page-members">
+
+                    {{ automation_members }}
+
                 </div>
 
             </div>
 
-            {#            first element #}
-
-            <div class="team-grid-info">
-                <div class="team-page-category">
-                    Electrical
-                </div>
-                <div>
-                    <img class="team-page-Img" src="{% static 'images/546188.jpg' %}" alt="Automation image">
-                </div>
-                <div class="team-page-members">
-                    Plamen Ivanov, Pavel Pavlov, Petar Georgiev, Atanas Uzunov, Kiril Dragostinov
-                </div>
-
-            </div>
 
 
             <div class="team-grid-info">
                 <div class="team-page-category">
                     Mechanical
                 </div>
+
                 <div>
-                    <img class="team-page-Img" src="{% static 'images/eng-2.png' %}" alt="Automation image">
+                    {% if web_settings.mechanical_engineering_image %}
+                        <img class="team-page-Img" src="{{ web_settings.mechanical_engineering_image }}"
+                             alt="Mechanical Engineering image">
+                    {% else %}
+                        <img class="team-page-Img" src="{% static 'images/eng-2.png' %}"
+                             alt="Mechanical Engineering image">
+                    {% endif %}
+
                 </div>
                 <div class="team-page-members">
-                    Plamen Ivanov, Pavel Pavlov, Petar Georgiev, Atanas Uzunov, Kiril Dragostinov
+                    {% if mechanical_members_count == 1 %}
+                        {{ mechanical_members_count }} member
+                    {% elif mechanical_members_count == 0 %}
+                        -
+                    {% else %}
+                        {{ mechanical_members_count }} members
+                    {% endif %}
+                </div>
+                <div class="team-page-members">
+
+                    {{ mechanical_members }}
+
+                </div>
+
+            </div>
+
+
+            <div class="team-grid-info">
+                <div class="team-page-category">
+                    Electrical
+                </div>
+                <div>
+                    {% if web_settings.electrical_engineering_image %}
+                        <img class="team-page-Img" src="{{ web_settings.electrical_engineering_image }}"
+                             alt="Electrical Engineering image">
+                    {% else %}
+                        <img class="team-page-Img" src="{% static 'images/546188.jpg' %}"
+                             alt="Electrical Engineering image">
+                    {% endif %}
+
+
+                </div>
+                <div class="team-page-members">
+                    {% if electrical_members_count == 1 %}
+                        {{ electrical_members_count }} member
+                    {% elif electrical_members_count == 0 %}
+                        -
+                    {% else %}
+                        {{ electrical_members_count }} members
+                    {% endif %}
+                </div>
+                <div class="team-page-members">
+
+                    {{ electrical_members }}
+
                 </div>
 
             </div>
@@ -60,10 +116,32 @@
                     Graphics & Design
                 </div>
                 <div>
-                    <img class="team-page-Img" src="{% static 'images/design-line-graphic-design-graphics-wallpaper-preview.jpg' %}" alt="Automation image">
+
+                    {% if web_settings.graphics_and_design_engineering_image %}
+                        <img class="team-page-Img" src="{{ web_settings.graphics_and_design_image }}"
+                             alt="Graphics and Design image">
+                    {% else %}
+                        <img class="team-page-Img"
+                             src="{% static 'images/design-line-graphic-design-graphics-wallpaper-preview.jpg' %}"
+                             alt="Graphics and Design image">
+                    {% endif %}
+
+
                 </div>
                 <div class="team-page-members">
-                    Plamen Ivanov, Pavel Pavlov, Petar Georgiev, Atanas Uzunov, Kiril Dragostinov
+
+                    {% if graphics_and_design_members_count == 1 %}
+                        {{ graphics_and_design_members_count }} member
+                    {% elif graphics_and_design_members_count == 0 %}
+                       -
+                    {% else %}
+                        {{ graphics_and_design_members_count }} members
+                    {% endif %}
+                </div>
+                <div class="team-page-members">
+
+                    {{ graphics_and_design_members }}
+
                 </div>
 
             </div>
@@ -74,10 +152,31 @@
                     Operational
                 </div>
                 <div>
-                    <img class="team-page-Img" src="{% static 'images/1880092.jpg' %}" alt="Automation image">
+
+                    {% if web_settings.operational_technologist_image %}
+                        <img class="team-page-Img" src="{{ web_settings.operational_technologist_image }}"
+                             alt="Operational Technology image">
+                    {% else %}
+                        <img class="team-page-Img" src="{% static 'images/1880092.jpg' %}"
+                             alt="Operational Technology image">
+                    {% endif %}
+
                 </div>
                 <div class="team-page-members">
-                    Plamen Ivanov, Pavel Pavlov, Petar Georgiev, Atanas Uzunov, Kiril Dragostinov
+
+
+                    {% if operational_technologist_members_count == 1 %}
+                        {{ operational_technologist_members_count }} member
+                    {% elif operational_technologist_members_count == 0 %}
+                        -
+                    {% else %}
+                        {{ operational_technologist_members_count }} members
+                    {% endif %}
+                </div>
+                <div class="team-page-members">
+
+                    {{ operational_technologist_members }}
+
                 </div>
 
             </div>
@@ -97,7 +196,7 @@
                     Automation
                 </div>
                 <div class="profileTextInfo">
-                    6
+                    {{ team.automation_tasks }}
                 </div>
 
                 <div class="profileTextLabel">
@@ -135,7 +234,6 @@
                 <div class="profileTextInfo">
                     100
                 </div>
-
 
 
                 <div class="profileTextLabel">

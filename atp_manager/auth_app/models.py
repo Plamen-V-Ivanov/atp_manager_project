@@ -1,5 +1,6 @@
 import datetime
 
+from django.core.validators import MinLengthValidator
 from django.db import models
 
 # Create your models here.
@@ -7,14 +8,21 @@ from django.db import models
 from django.contrib.auth import models as auth_models
 
 from atp_manager.auth_app.managers import AtpManagerUserManager
+from atp_manager.common.validators.validators import validate_only_letters_first_is_capital, \
+    validate_only_letters_and_dots_as_separators
 
 
 class AtpManagerUser(auth_models.AbstractBaseUser, auth_models.PermissionsMixin):
     USERNAME_MAX_LENGTH = 25
+    USERNAME_MIN_LEN = 6
 
     username = models.CharField(
         max_length=USERNAME_MAX_LENGTH,
         unique=True,
+        validators=(
+            validate_only_letters_and_dots_as_separators,
+            MinLengthValidator(USERNAME_MIN_LEN),
+        ),
     )
 
     date_joined = models.DateTimeField(
@@ -31,41 +39,55 @@ class AtpManagerUser(auth_models.AbstractBaseUser, auth_models.PermissionsMixin)
 
 
 class Profile(models.Model):
-
-    AUTOMATION = "Automation"
+    AUTOMATION_ENGINEERING = "Automation Engineering"
     ELECTRICAL_ENGINEERING = "Electrical Engineering"
     MECHANICAL_ENGINEERING = "Mechanical Engineering"
-    GRAPHICS_AMD_DESIGN = "Graphics & Design"
-    OPERATIONAL = "Operational"
-    OTHER = "Other"
+    GRAPHICS_AMD_DESIGN = "Graphics and Design"
+    OPERATIONAL_TECHNOLOGIST = "Operational Technologist"
 
     SKILLS = [(x, x) for x in (
-        AUTOMATION, ELECTRICAL_ENGINEERING, MECHANICAL_ENGINEERING, GRAPHICS_AMD_DESIGN, OPERATIONAL, OTHER
+        AUTOMATION_ENGINEERING, ELECTRICAL_ENGINEERING, MECHANICAL_ENGINEERING, GRAPHICS_AMD_DESIGN,
+        OPERATIONAL_TECHNOLOGIST
     )]
+
+    MALE = "Male"
+    FEMALE = "Female"
+    GENDERS = [(x, x) for x in (MALE, FEMALE)]
 
     FIRST_NAME_MAX_LEN = 30
     LAST_NAME_MAX_LEN = 30
-    CATEGORY_MAX_LEN = 100
+    FIRST_NAME_MIN_LEN = 2
+    LAST_NAME_MIN_LEN = 2
+
+    # CATEGORY_MAX_LEN = 100
 
     first_name = models.CharField(
         max_length=FIRST_NAME_MAX_LEN,
         verbose_name="First Name",
-        # validators=(
-        #
-        # )
+        validators=(
+            validate_only_letters_first_is_capital,
+            MinLengthValidator(LAST_NAME_MIN_LEN),
+
+        )
     )
 
     last_name = models.CharField(
         max_length=LAST_NAME_MAX_LEN,
         verbose_name="Last name",
+        validators=(
+            validate_only_letters_first_is_capital,
+            MinLengthValidator(LAST_NAME_MIN_LEN),
+        )
     )
 
     email = models.EmailField(
         verbose_name="Email",
     )
 
-    image_url = models.URLField(
-        verbose_name="Image URL",
+    picture = models.URLField(
+        verbose_name="Picture",
+        blank=True,
+        null=True,
     )
 
     date_of_birth = models.DateField(
@@ -78,28 +100,13 @@ class Profile(models.Model):
         choices=SKILLS,
     )
 
+    gender = models.CharField(
+        max_length=max(len(x) for (x, _) in GENDERS),
+        choices=GENDERS,
+    )
+
     joined_the_team = models.DateTimeField(
         auto_now_add=True,
-    )
-
-    rank1_tasks_finished = models.IntegerField(
-        default=0,
-    )
-
-    rank2_tasks_finished = models.IntegerField(
-        default=0,
-    )
-
-    rank3_tasks_finished = models.IntegerField(
-        default=0,
-    )
-
-    rank4_tasks_finished = models.IntegerField(
-        default=0,
-    )
-
-    tasks_not_finished = models.IntegerField(
-        default=0,
     )
 
     user = models.OneToOneField(
@@ -117,13 +124,14 @@ class Profile(models.Model):
         return f"{self.first_name} {self.last_name}"
 
     @property
-    def total_finished_tasks(self):
-        total = self.rank1_tasks_finished + self.rank2_tasks_finished + \
-                self.rank3_tasks_finished + self.rank4_tasks_finished
+    def date_joined_the_team(self):
+        return self.joined_the_team.date()
 
-        return total
+    def __str__(self):
+        return f'{self.first_name} {self.last_name} : {self.professional_skill}'
 
-    @property
-    def finish_rate(self):
-        rate = (self.total_finished_tasks / self.total_finished_tasks + self.tasks_not_finished) * 100
-        return f'{rate:.2f}'
+    # def delete(self, *args, **kwargs):
+    #     self.user.delete()
+    #     return super(self.__class__, self).delete(*args, **kwargs)
+
+

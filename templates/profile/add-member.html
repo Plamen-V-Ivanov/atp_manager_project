@@ -1,0 +1,44 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block page_content %}
+
+{#    <!-- Delete Profile Page-->#}
+{#    <section id="content">#}
+{#    <link rel="stylesheet" href="{% static 'css/form-design.css' %}"/>#}
+{#        <div class=register">#}
+{#            <div class="fieldset">#}
+{##}
+{#                <!-- Delete Profile Form -->#}
+{#                <div class="title" style="text-align: center">Add a new member to your team.</div>#}
+{#                <form method="POST" action="{% url 'add a profile' %}" enctype="multipart/form-data">#}
+{#                    <!-- Confirm Button -->#}
+{##}
+{#                    {{ form }}#}
+{#                    {% csrf_token %}#}
+{##}
+{#                    <button class="submit" type="submit">Add</button>#}
+{#                </form>#}
+{#                <!-- End Delete Profile Form -->#}
+{##}
+{#            </div>#}
+{#        </div>#}
+{#    </section>#}
+
+     <section class="createPage">
+
+        <form method="POST" action="{% url 'add a profile' %}" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Add Member</legend>
+                <div class="container">
+
+                    {{ form }}
+                    {% csrf_token %}
+
+                    <!-- Button for Adding Album -->
+                    <button class="add-task" type="submit">Add</button>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+{% endblock %}

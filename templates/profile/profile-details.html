@@ -5,87 +5,83 @@
     <section id="detailsPage">
         <div class="wrapper">
             <div class="profilePage">
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
-                     alt="Profile Image">
+                {% if profile.picture %}
+                    <img src="{{ profile.picture }}"
+                         alt="Profile Image">
+                {% else %}
+                    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                         alt="Profile Image">
+                {% endif %}
             </div>
 
-            {#            <div class="profileText">#}
-            {#                <!-- Profile Info -->#}
-            {#                <h1><u>First Name</u>:</h1>#}
-            {#                <h2>  Plamen: </h2>#}
-            {##}
-            {#                <h1><u>Last Name</u>: Ivanov</h1>#}
-            {#                <h1><u>Email</u>: omegata_@abv.bg</h1>#}
-            {#                <h1><u>Age</u>: 29</h1>#}
-            {#                <h1><u>Skill Sets</u>: Mechanical Engineering</h1>#}
-            {#                <h1><u>Date joined the team</u>:<style> </style>17.11.2016</h1>#}
             <div class="profile-grid-info">
                 <div class="profileTextLabel">First Name:</div>
-                <div class="profileTextInfo">Plamen</div>
+                <div class="profileTextInfo">{{ profile.first_name }}</div>
                 <div class="profileTextLabel">Last Name:</div>
-                <div class="profileTextInfo">Ivanov</div>
+                <div class="profileTextInfo">{{ profile.last_name }}</div>
                 <div class="profileTextLabel">Email:</div>
-                <div class="profileTextInfo">plamen.ivanov@atp-bg.com</div>
+                <div class="profileTextInfo">{{ profile.email }}</div>
                 <div class="profileTextLabel">Age:</div>
-                <div class="profileTextInfo">29</div>
+                <div class="profileTextInfo">{{ profile.age }}</div>
                 <div class="profileTextLabel">Date Joined:</div>
-                <div class="profileTextInfo">17.11.2016</div>
+                <div class="profileTextInfo">{{ profile.date_joined_the_team }}</div>
                 <div class="profileTextLabel">Skill:</div>
-                <div class="profileTextInfo">Mechanical Engineering</div>
-
+                <div class="profileTextInfo">{{ profile.professional_skill }}</div>
+                <div class="profileTextLabel">Gender:</div>
+                <div class="profileTextInfo">{{ profile.gender }}</div>
             </div>
             <div style="text-align: center; font-size: 30px; font-weight: bolder; color: white; margin-top: 30px; margin-bottom: 20px">
                 Statistics:
             </div>
             <div class="profile-grid-statistics">
                 <div class="grid-item">
-                    Tasks Completed:
+                    Completed Tasks:
                 </div>
                 <div class="grid-item" style="color: tan">
-                    50
+                    {{ completed_tasks }}
                 </div>
                 <div class="grid-item">
-                    Rank 1 Tasks:
+                    Easy Tasks:
                 </div>
                 <div class="grid-item" style="color: tan">
-                    30
+                    {{ easy_tasks_finished }}
                 </div>
                 <div class="grid-item">
-                    Tasks Not Completed:
+                     Not Completed Tasks:
                 </div>
                 <div class="grid-item" style="color: tan">
-                    3
+                    {{ unfinished_tasks }}
                 </div>
                 <div class="grid-item">
-                    Rank 2 Tasks:
+                    Medium Tasks:
                 </div>
                 <div class="grid-item" style="color: tan">
-                    15
+                    {{ medium_tasks_finished }}
                 </div>
 
                 <div class="grid-item">
                     Total Tasks:
                 </div>
                 <div class="grid-item" style="color: tan">
-                    53
+                    {{ total_tasks }}
                 </div>
                 <div class="grid-item">
-                    Rank 3 Tasks:
+                    Hard Tasks:
                 </div>
                 <div class="grid-item" style="color: tan">
-                    5
+                    {{ hard_tasks_finished }}
                 </div>
                 <div class="grid-item">
                     Finish Rate:
                 </div>
                 <div class="grid-item" style="color: tan">
-                    86.56%
+                    {{ finish_rate }}%
                 </div>
                 <div class="grid-item">
-                    Rank 4 Tasks:
+                    Advanced Tasks:
                 </div>
                 <div class="grid-item" style="color: tan">
-                    0
+                    {{ advanced_tasks_finished }}
                 </div>
             </div>
 
