@@ -3,9 +3,9 @@
 
     <!--Edit Page-->
     <section class="editPage">
-        <form method="POST" action="{% url 'album edit' album.pk %}" enctype="multipart/form-data">
+        <form method="POST" action="{% url 'edit a task' 1 %}" enctype="multipart/form-data">
             <fieldset>
-                <legend>Edit Album</legend>
+                <legend>Edit Task</legend>
                 <div class="container">
 
                     <!-- Form for Editing Album -->
@@ -14,7 +14,7 @@
                     {% csrf_token %}
 
                     <!-- Button for Editing Album -->
-                    <button class="edit-album" type="submit">Edit Album</button>
+                    <button class="edit-task" type="submit">Edit Task</button>
                 </div>
             </fieldset>
         </form>

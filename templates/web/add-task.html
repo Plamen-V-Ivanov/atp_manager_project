@@ -4,16 +4,16 @@
     <!--Create Page-->
     <section class="createPage">
 
-        <form method="POST" action="{% url 'album add' %}" enctype="multipart/form-data">
+        <form method="POST" action="{% url 'add a task' %}" enctype="multipart/form-data">
             <fieldset>
-                <legend>Add Album</legend>
+                <legend>Add Task</legend>
                 <div class="container">
 
                     {{ form }}
                     {% csrf_token %}
 
                     <!-- Button for Adding Album -->
-                    <button class="add-album" type="submit">Add New Album</button>
+                    <button class="add-task" type="submit">Add New Task</button>
                 </div>
             </fieldset>
         </form>
