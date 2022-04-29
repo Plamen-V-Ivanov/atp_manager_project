@@ -99,7 +99,7 @@ class CreateProfileForm(auth_forms.UserCreationForm):
     picture = forms.URLField(
         required=False,
         widget=forms.TextInput(attrs={'class': 'form-control',
-                                      'placeholder': 'picture is optional'}),
+                                      'placeholder': 'Picture - optional'}),
     )
 
     date_of_birth = forms.DateField(

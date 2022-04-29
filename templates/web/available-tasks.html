@@ -7,82 +7,89 @@
     {% if request.user.is_authenticated %}
         <div class="team-page-category" style="padding: 20px;"> Tasks that are available to get:</div>
 
-        {% for task in tasks %}
+        {% if not tasks %}
+            <div class="team-page-category" style="padding: 20px;"> There are no available tasks at this moment:</div>
+        {% else %}
+            {% for task in tasks %}
 
-            <div class="list-card-box" style="max-width: 80rem;">
-                <div class="task-info">
-
-
-                    <div class="task-label">Title:</div>
-                    <div class="task-content"> {{ task.title }}</div>
-
-                    <div class="task-label">Categories:</div>
-                    <div class="task-content">{{ task.category }}</div>
-
-                    <div class="task-label">Difficulty:</div>
-                    <div class="task-content">{{ task.difficulty }}</div>
-
-                    <div class="task-label">Added at:</div>
-                    <div class="task-content">{{ task.date_added }}</div>
-
-                    <div class="task-label">Suitable people:</div>
-                    {#                                        <div class="task-content">{{ automation_members }}</div>#}
-                    {#                    <div class="task-content">{{ people.task.category }}</div>#}
-                    {% if task.category == "Automation Engineering" %}
-                        <div class="task-content">{{ mechanical_members }}</div>
-                    {% elif task.category == "Mechanical Engineering" %}
-                        <div class="task-content">{{ mechanical_members }}</div>
-                    {% elif task.category == "Graphics and Design" %}
-                        <div class="task-content">{{ mechanical_members }}</div>
-                    {% elif task.category == "Operational Technologist" %}
-                        <div class="task-content">{{ mechanical_members }}</div>
-                    {% endif %}
+                <div class="list-card-box" style="max-width: 80rem;">
+                    <div class="task-info">
 
 
-                </div>
-                <div>
-                    {% if task.category == "Automation Engineering" %}
-                        <img class="task-img" src="{% static 'images/wp3610487.jpg' %}" alt="Automation image">
-                    {% elif task.category == "Mechanical Engineering" %}
-                        <img class="task-img" src="{% static 'images/eng-2.png' %}" alt="Mechanical Engineering">
-                    {% elif task.category == "Electrical Engineering" %}
+                        <div class="task-label">Title:</div>
+                        <div class="task-content"> {{ task.title }}</div>
 
-                        <img class="task-img" src="{% static 'images/546188.jpg' %}" alt="Electrical Engineering">
-                    {% elif task.category == "Graphics and Design" %}
-                        <img class="task-img"
-                             src="{% static 'images/design-line-graphic-design-graphics-wallpaper-preview.jpg' %}"
-                             alt="Graphics and Design">
-                    {% elif task.category == "Operational Technologist" %}
-                        <img class="task-img" src="{% static 'images/1880092.jpg' %}" alt="Operational Technologist">
-                    {% endif %}
-                </div>
-                <div class="card-body" style="margin-top: 10px; margin-left: 1px">
-                    <div class="task-label">Description:</div>
-                    <div class="task-content">{{ task.description }}</div>
+                        <div class="task-label">Categories:</div>
+                        <div class="task-content">{{ task.category }}</div>
 
-                </div>
-                <div class="task-navbar">
-                    <div class="task-navbar">
-                        {% if request.user.is_staff %}
-                            <div class="btn-group-task2">
-                                <a href="{% url 'edit a task' task.pk %}" class="edit">Edit</a>
-                            </div>
-                            <div class="btn-group-task2">
+                        <div class="task-label">Difficulty:</div>
+                        <div class="task-content">{{ task.difficulty }}</div>
 
-                                <a href="{% url 'delete a task' task.pk %}" class="edit">Delete</a>
-                            </div>
+                        <div class="task-label">Added at:</div>
+                        <div class="task-content">{{ task.date_added }}</div>
 
-                        {% else %}
-                            <div class="btn-group-task2">
-                                <a href="{% url 'take task' task.pk %}" class="edit">Take</a>
-                            </div>
+                        <div class="task-label">Suitable people:</div>
+                        {#                                        <div class="task-content">{{ automation_members }}</div>#}
+                        {#                    <div class="task-content">{{ people.task.category }}</div>#}
+                        {% if task.category == "Automation Engineering" %}
+                            <div class="task-content">{{ automation_members }}</div>
+                        {% elif task.category == "Mechanical Engineering" %}
+                            <div class="task-content">{{ mechanical_members }}</div>
+                        {% elif task.category == "Electrical Engineering" %}
+                            <div class="task-content">{{ electrical_members }}</div>
+                        {% elif task.category == "Graphics and Design" %}
+                            <div class="task-content">{{ graphics_and_design_members }}</div>
+                        {% elif task.category == "Operational Technologist" %}
+                            <div class="task-content">{{ operational_members }}</div>
+                        {% endif %}
+
+
+                    </div>
+                    <div>
+                        {% if task.category == "Automation Engineering" %}
+                            <img class="task-img" src="{% static 'images/wp3610487.jpg' %}" alt="Automation image">
+                        {% elif task.category == "Mechanical Engineering" %}
+                            <img class="task-img" src="{% static 'images/eng-2.png' %}" alt="Mechanical Engineering">
+                        {% elif task.category == "Electrical Engineering" %}
+
+                            <img class="task-img" src="{% static 'images/546188.jpg' %}" alt="Electrical Engineering">
+                        {% elif task.category == "Graphics and Design" %}
+                            <img class="task-img"
+                                 src="{% static 'images/design-line-graphic-design-graphics-wallpaper-preview.jpg' %}"
+                                 alt="Graphics and Design">
+                        {% elif task.category == "Operational Technologist" %}
+                            <img class="task-img" src="{% static 'images/1880092.jpg' %}"
+                                 alt="Operational Technologist">
                         {% endif %}
                     </div>
+                    <div class="card-body" style="margin-top: 10px; margin-left: 1px">
+                        <div class="task-label">Description:</div>
+                        <div class="task-content">{{ task.description }}</div>
+
+                    </div>
+                    <div class="task-navbar">
+                        <div class="task-navbar">
+                            {% if request.user.is_staff %}
+                                <div class="btn-group-task2">
+                                    <a href="{% url 'edit a task' task.pk %}" class="edit">Edit</a>
+                                </div>
+                                <div class="btn-group-task2">
+
+                                    <a href="{% url 'delete a task' task.pk %}" class="edit">Delete</a>
+                                </div>
+
+                            {% else %}
+                                <div class="btn-group-task2">
+                                    <a href="{% url 'take task' task.pk %}" class="edit">Take</a>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+
                 </div>
 
-            </div>
-
-        {% endfor %}
+            {% endfor %}
+        {% endif %}
     {% endif %}
 
 

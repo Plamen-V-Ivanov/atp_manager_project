@@ -1,37 +1,55 @@
 from django.views import generic as views
 
 from atp_manager.auth_app.models import Profile
+from atp_manager.common.helpers.helpers import get_finished_tasks_count_by_category, \
+    get_members_names_and_count_by_category
+from atp_manager.web.models import Task
 
 
 class TeamView(views.TemplateView):
     template_name = 'web/team-details.html'
 
     def get_context_data(self, **kwargs):
-        automation_members = list(Profile.objects.all().filter(professional_skill="Automation Engineering"))
-        automation_members = [x.full_name for x in automation_members]
-        automation_members_count = len(automation_members)
-        automation_members = ",    ".join(sorted(automation_members))
 
-        mechanical_members = list(Profile.objects.all().filter(professional_skill="Mechanical Engineering"))
-        mechanical_members = [x.full_name for x in mechanical_members]
-        mechanical_members_count = len(mechanical_members)
-        mechanical_members = ",    ".join(sorted(mechanical_members))
+        automation_members, automation_members_count = \
+            get_members_names_and_count_by_category("Automation Engineering")
 
-        electrical_members = list(Profile.objects.all().filter(professional_skill="Electrical Engineering"))
-        electrical_members = [x.full_name for x in electrical_members]
-        electrical_members_count = len(electrical_members)
-        electrical_members = ",    ".join(sorted(electrical_members))
+        mechanical_members, mechanical_members_count = \
+            get_members_names_and_count_by_category("Mechanical Engineering")
 
-        graphics_and_design_members = list(Profile.objects.all().filter(professional_skill="Graphics and Design"))
-        graphics_and_design_members = [x.full_name for x in graphics_and_design_members]
-        graphics_and_design_members_count = len(graphics_and_design_members)
-        graphics_and_design_members = ",    ".join(sorted(graphics_and_design_members))
+        electrical_members, electrical_members_count = \
+            get_members_names_and_count_by_category("Electrical Engineering")
 
-        operational_technologist_members = list(
-            Profile.objects.all().filter(professional_skill="Operational Technologist"))
-        operational_technologist_members = [x.full_name for x in operational_technologist_members]
-        operational_technologist_members_count = len(operational_technologist_members)
-        operational_technologist_members = ",    ".join(sorted(operational_technologist_members))
+        graphics_and_design_members, graphics_and_design_members_count = \
+            get_members_names_and_count_by_category("Graphics and Design")
+
+        operational_technologist_members, operational_technologist_members_count = \
+            get_members_names_and_count_by_category("Operational Technologist")
+
+        automation_tasks = get_finished_tasks_count_by_category("Automation Engineering")
+
+        mechanical_tasks = get_finished_tasks_count_by_category("Mechanical Engineering")
+
+        electrical_tasks = get_finished_tasks_count_by_category("Electrical Engineering")
+
+        graphics_and_design_tasks = get_finished_tasks_count_by_category("Graphics and Design")
+
+        operational_tasks = get_finished_tasks_count_by_category("Operational Technologist")
+
+        completed_tasks = list(
+            Task.objects.all().filter(is_approved_finished=True).filter(is_closed_for_approval=True)
+        )
+        completed_tasks = len(completed_tasks)
+
+        outstanding_tasks = list(
+            Task.objects.all().filter(is_outstanding=True)
+        )
+        outstanding_tasks = len(outstanding_tasks)
+
+        active_tasks = list(
+            Task.objects.all().filter(is_approved_finished=False).filter(is_closed_for_approval=False)
+        )
+        active_tasks = len(active_tasks)
 
         kwargs['automation_members'] = automation_members
         kwargs['automation_members_count'] = automation_members_count
@@ -43,4 +61,14 @@ class TeamView(views.TemplateView):
         kwargs['graphics_and_design_members_count'] = graphics_and_design_members_count
         kwargs['operational_technologist_members'] = operational_technologist_members
         kwargs['operational_technologist_members_count'] = operational_technologist_members_count
+
+        kwargs['automation_tasks'] = automation_tasks
+        kwargs['mechanical_tasks'] = mechanical_tasks
+        kwargs['electrical_tasks'] = electrical_tasks
+        kwargs['graphics_and_design_tasks'] = graphics_and_design_tasks
+        kwargs['operational_tasks'] = operational_tasks
+        kwargs['completed_tasks'] = completed_tasks
+        kwargs['outstanding_tasks'] = outstanding_tasks
+        kwargs['active_tasks'] = active_tasks
+
         return super().get_context_data(**kwargs)

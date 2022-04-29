@@ -5,7 +5,8 @@
     <!--Details Page-->
 
     {% if request.user.is_authenticated and request.user.is_staff %}
-        <div class="team-page-category" style="padding: 20px;"> These tasks are declared finished. Choose if you approve them or not:
+        <div class="team-page-category" style="padding: 20px;"> These tasks are declared finished. Choose if you approve
+            them or not:
         </div>
 
         </div>
@@ -66,6 +67,9 @@
                             </div>
                             <div class="btn-group-task2">
                                 <a href="{% url 'dont approve task is finished'  task.pk %}" class="edit">Don't</a>
+                            </div>
+                            <div class="btn-group-task2">
+                                <a href="{% url 'drop out the task'  task.pk %}" class="edit">Drop Out</a>
                             </div>
                             {#                        <div class="btn-group-task2">#}
                             {#                            <a href="{% url 'delete a task'  task.pk %}" class="edit">Delete</a>#}

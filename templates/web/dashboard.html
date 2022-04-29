@@ -4,9 +4,9 @@
 
     {% if request.user.is_authenticated and request.user.is_staff %}
 
-        <div style="display: inline-grid; width: 100%; grid-template-columns: 1fr 1fr" >
+        <div style="display: inline-grid; width: 100%; grid-template-columns: 1fr 1fr">
 
-            <div class="actionBtn" style="width: 400px; margin: 10px auto; alignment: center; font-weight: bolder" >
+            <div class="actionBtn" style="width: 400px; margin: 10px auto; alignment: center; font-weight: bolder">
                 <a href="{% url 'show closed tasks' %}" class="edit">Closed Tasks</a>
             </div>
 
@@ -17,35 +17,20 @@
         </div>
 
         <div>
-        <link rel="stylesheet" href="{% static 'css/planetary.css' %}"/>
-        <div class="gear-wrapper">
-            <div class="ring"></div>
-            <div class="sun"></div>
-            <div class="planets">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
+            <link rel="stylesheet" href="{% static 'css/planetary.css' %}"/>
+            <div class="gear-wrapper">
+                <div class="ring"></div>
+                <div class="sun"></div>
+                <div class="planets">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
             </div>
         </div>
-        </div>
-
-        {#      <div class="card-box" style="width: 15rem; height: 180px; margin-top: 20px; margin-left: 540px; box-shadow: 0 0 5px 1px tan;">#}
-        {#          <div class="gear-animation">#}
-        {#              <link rel="stylesheet" href="{% static 'css/gears.css' %}"/>#}
-        {#              <div class="gear" style="margin-left: 50px"></div>#}
-        {#                <div class="gear2"></div>#}
-        {#          </div>#}
-        {#        </div>#}
-
-        {#                <div class="card-box" style="font-size: 24px; text-align: center; margin-top: 10px; margin-left: 40px">#}
-        {#                    <div class="actionBtn" style="font-size: 24px; text-align: center; margin-top: 10px; margin-left: 40px">#}
-        {#                        <a href="{% url 'show requested tasks' %}" class="edit">Requested tasks.</a>#}
-        {#                    </div>#}
-
-        {#        </div>#}
 
 
-    {% else %}
+    {% elif request.user.is_authenticated %}
         <div>
             <div class="team-page-category" style="padding: 20px;"> Your active tasks:</div>
 
@@ -57,7 +42,8 @@
             {% for task in tasks %}
 
                 <div class="card-box" style="max-width: 30rem;">
-                    <div class="card-header" style="font-size: 24px; text-align: center">Title: {{ task.title }}</div>
+                    <div class="card-header" style="font-size: 24px; text-align: center">Title: <span
+                            style="color: tan"> &ensp;{{ task.title }} </span></div>
                     <div class="card-body">
                         <h5 class="card-title" style="font-size: 20px; text-align: center; margin: 5px">
                             Category: {{ task.category }}</h5>
@@ -87,12 +73,14 @@
                                 {% endif %}
                             </div>
                         </div>
-                        <div class="task-content" style="text-align: center; font-size: 20px">Added
-                            at: {{ task.date_added }}</div>
+                        <div class="task-content" style="text-align: center; font-size: 20px; color: white">Added
+                            at:
+                            <span style="color: tan"> &ensp;{{ task.date_added }}</span>
+                        </div>
                         <div class="buttons-my-tasks">
                             <div class="task-content"
-                                 style="text-align: center; font-size: 20px; margin-top: 25px; margin-left: 40px">
-                                Difficulty: {{ task.difficulty }}
+                                 style="text-align: center; font-size: 20px; margin-top: 25px; margin-left: 15px; color: white; width: 100%;">
+                                Difficulty: <span style="color: tan"> &ensp;{{ task.difficulty }} </span>
                             </div>
                             <div class="btn-group">
                                 <!-- Album Buttons -->
@@ -105,181 +93,6 @@
             {% endfor %}
         {% endif %}
     {% endif %}
-
-{# ___________________________________________________   #}
-{##}
-{#    <div class="card-box" style="max-width: 30rem;">#}
-{#        <div class="card-header" style="font-size: 24px; text-align: center">This is the title</div>#}
-{#        <div class="card-body">#}
-{#            <h5 class="card-title" style="font-size: 20px; text-align: center; margin: 5px">Category: Automation</h5>#}
-{#            <div style="font-size: 18px; text-align: center; margin: 5px">Description:</div>#}
-{##}
-{#            <div class="description-content">#}
-{#                <div class="card-text">Some quick example text to build on the card title and make up the bulk of the#}
-{#                    card's#}
-{#                    content. Some quick example text to build on the card title and make up the bulk of the card's#}
-{#                    content.#}
-{#                </div>#}
-{#                <div>#}
-{#                    <img class="my-task-img" src="{% static 'images/wp3610487.jpg' %}" alt="Automation image">#}
-{##}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="task-content" style="text-align: center; font-size: 20px">#}
-{#                Time Left: 3 hours#}
-{#            </div>#}
-{#            <div class="buttons-my-tasks">#}
-{#                <div class="task-content"#}
-{#                     style="text-align: center; font-size: 20px; margin-top: 25px; margin-left: 40px">#}
-{#                    Difficulty: Rank 1#}
-{#                </div>#}
-{#                <div class="btn-group">#}
-{#                    <!-- Album Buttons -->#}
-{#                    <a href="" class="edit">Close Task</a>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{#    </div>#}
-{##}
-{#    <div class="card-box" style="max-width: 30rem;">#}
-{#        <div class="card-header" style="font-size: 24px; text-align: center">This is the title</div>#}
-{#        <div class="card-body">#}
-{#            <h5 class="card-title" style="font-size: 20px; text-align: center; margin: 5px">Category: Automation</h5>#}
-{#            <div style="font-size: 18px; text-align: center; margin: 5px">Description:</div>#}
-{##}
-{#            <div class="description-content">#}
-{#                <div class="card-text">Some quick example text to build on the card title and make up the bulk of the#}
-{#                    card's#}
-{#                    content. Some quick example text to build on the card title and make up the bulk of the card's#}
-{#                    content.#}
-{#                </div>#}
-{#                <div>#}
-{#                    <img class="my-task-img" src="{% static 'images/wp3610487.jpg' %}" alt="Automation image">#}
-{##}
-{#                </div>#}
-{#            </div>#}
-{#            <div class="task-content" style="text-align: center; font-size: 20px">#}
-{#                Time Left: 3 hours#}
-{#            </div>#}
-{#            <div class="buttons-my-tasks">#}
-{#                <div class="task-content"#}
-{#                     style="text-align: center; font-size: 20px; margin-top: 25px; margin-left: 40px">#}
-{#                    Difficulty: Rank 1#}
-{#                </div>#}
-{#                <div class="btn-group">#}
-{#                    <!-- Album Buttons -->#}
-{#                    <a href="" class="edit">Close Task</a>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{#    </div>#}
-{##}
-{##}
-{# _____________________ closed tasks code ___________________________   #}
-{##}
-{#    <div class="list-card-box" style="max-width: 70rem;">#}
-{#        <div class="task-info">#}
-{##}
-{##}
-{#            <div class="task-label">Title:</div>#}
-{#            <div class="task-content"> Production line design. Production line design.</div>#}
-{##}
-{#            <div class="task-label">Categories:</div>#}
-{#            <div class="task-content">Automation</div>#}
-{##}
-{#            <div class="task-label">Difficulty:</div>#}
-{#            <div class="task-content">5</div>#}
-{##}
-{#            <div class="task-label">Time left:</div>#}
-{#            <div class="task-content">3 hours</div>#}
-{##}
-{#            <div class="task-label">People involved:</div>#}
-{#            <div class="task-content">Plamen Ivanov</div>#}
-{##}
-{##}
-{#        </div>#}
-{#        <div>#}
-{#            <img class="task-img" src="{% static 'images/wp3610487.jpg' %}" alt="Automation image">#}
-{##}
-{#        </div>#}
-{#        <div class="card-body">#}
-{#            <div class="task-label">Description:</div>#}
-{#            <div class="task-content">Some quick example text to build on the card title and make up the bulk of the#}
-{#                card's#}
-{#                content. Some quick example text to build on the card title and make up the bulk of the card's content.#}
-{#                Some quick example text to build on the card title and make up the bulk of the card's content.#}
-{#            </div>#}
-{##}
-{#        </div>#}
-{#        <div class="task-navbar">#}
-{#            <div class="task-navbar">#}
-{#                <div class="btn-group-task ">#}
-{#                    <!-- Album Buttons -->#}
-{#                    <a href="" class="edit">Get The Task</a>#}
-{#                </div>#}
-{#                <div>If admin:</div>#}
-{#                <div class="btn-group-task">#}
-{#                    <a href="" class="edit">Delete The Task</a>#}
-{#                </div>#}
-{#                <div class="btn-group-task">#}
-{#                    <a href="" class="edit">Edit The Task</a>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{##}
-{#    </div>#}
-{##}
-{#    <div class="list-card-box" style="max-width: 70rem;">#}
-{#        <div class="task-info">#}
-{##}
-{##}
-{#            <div class="task-label">Title:</div>#}
-{#            <div class="task-content"> Production line design. Production line design.</div>#}
-{##}
-{#            <div class="task-label">Categories:</div>#}
-{#            <div class="task-content">Automation</div>#}
-{##}
-{#            <div class="task-label">Difficulty:</div>#}
-{#            <div class="task-content">5</div>#}
-{##}
-{#            <div class="task-label">Time left:</div>#}
-{#            <div class="task-content">3 hours</div>#}
-{##}
-{#            <div class="task-label">People involved:</div>#}
-{#            <div class="task-content">Plamen Ivanov</div>#}
-{##}
-{##}
-{#        </div>#}
-{#        <div>#}
-{#            <img class="task-img" src="{% static 'images/wp3610487.jpg' %}" alt="Automation image">#}
-{##}
-{#        </div>#}
-{#        <div class="card-body">#}
-{#            <div class="task-label">Description:</div>#}
-{#            <div class="task-content">Some quick example text to build on the card title and make up the bulk of the#}
-{#                card's#}
-{#                content. Some quick example text to build on the card title and make up the bulk of the card's content.#}
-{#                Some quick example text to build on the card title and make up the bulk of the card's content.#}
-{#            </div>#}
-{##}
-{#        </div>#}
-{#        <div class="task-navbar">#}
-{#            <div class="task-navbar">#}
-{#                <div class="btn-group-task ">#}
-{#                    <!-- Album Buttons -->#}
-{#                    <a href="" class="edit">Get The Task</a>#}
-{#                </div>#}
-{#                <div>If admin:</div>#}
-{#                <div class="btn-group-task">#}
-{#                    <a href="" class="edit">Delete The Task</a>#}
-{#                </div>#}
-{#                <div class="btn-group-task">#}
-{#                    <a href="" class="edit">Edit The Task</a>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{##}
-{#    </div>#}
 
 
 {% endblock %}

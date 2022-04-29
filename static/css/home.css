@@ -1,5 +1,6 @@
 body {
     background-image: url('/static/images/wp3610497.jpg');
+    background-attachment: fixed ;
     background-size: cover;
 }
 

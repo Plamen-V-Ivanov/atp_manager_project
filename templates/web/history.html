@@ -5,7 +5,7 @@
     <!--Details Page-->
 
     {% if request.user.is_authenticated %}
-        <div class="team-page-category" style="padding: 20px;"> Tasks that are successfully finished:</div>
+        <div class="team-page-category" style="padding: 20px;"> Tasks that are not active anymore:</div>
 
         {#    </div>#}
         {#    {% if not tasks %}#}
@@ -30,8 +30,17 @@
                     <div class="task-label">Added at:</div>
                     <div class="task-content">{{ task.date_added }}</div>
 
-                    <div class="task-label">Done by:</div>
-                    <div class="task-content">{{ task.taken_by_names }}</div>
+                    {% if task.is_approved_finished %}
+
+                        <div class="task-label">Done by:</div>
+                        <div class="task-content">{{ task.taken_by_names }}</div>
+
+                    {% else %}
+
+                        <div class="task-label">Undone by:</div>
+                        <div class="task-content">{{ task.taken_by_names }}</div>
+
+                    {% endif %}
 
 
                 </div>
@@ -59,8 +68,12 @@
 
 
                 <div class="card-body" style="margin-top: 10px">
-                    <div class="task-label">Finished at:</div>
-                    <div class="task-content">{{ task.date_finished }}</div>
+                    {% if task.is_approved_finished %}
+                        <div class="task-label">Finished at:</div>
+                        <div class="task-content">{{ task.date_finished }}</div>
+                    {% else %}
+                        <div class="task-label">Not Done</div>
+                    {% endif %}
                     {% if request.user.is_staff %}
                         <div class="btn-group-task2" style="margin-top: 40px; text-align: center">
                             <a href="{% url 'delete a task' task.pk %}" class="edit">Delete</a>
@@ -74,10 +87,7 @@
             </div>
 
         {% endfor %}
+
     {% endif %}
-
-
-
-
 
 {% endblock %}

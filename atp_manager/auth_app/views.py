@@ -45,11 +45,11 @@ class ProfileDetailsView(views.DetailView):
         medium_tasks_finished = len(profile_tasks.filter(difficulty="Medium").filter(is_approved_finished=True))
         hard_tasks_finished = len(profile_tasks.filter(difficulty="Hard").filter(is_approved_finished=True))
         advanced_tasks_finished = len(profile_tasks.filter(difficulty="Advanced").filter(is_approved_finished=True))
-        unfinished_tasks = len(profile_tasks.filter(is_approved_finished=True).filter(is_closed_for_approval=True))
+        outstanding_tasks = len(profile_tasks.filter(is_outstanding=True))
         total_tasks = easy_tasks_finished + medium_tasks_finished + hard_tasks_finished + \
-                      advanced_tasks_finished + unfinished_tasks
-        completed_tasks = total_tasks - unfinished_tasks
-        if total_tasks + unfinished_tasks == 0:
+                      advanced_tasks_finished + outstanding_tasks
+        completed_tasks = total_tasks - outstanding_tasks
+        if total_tasks == 0:
             finish_rate = f"{0:.2f}"
         else:
             finish_rate = f"{(completed_tasks / total_tasks) * 100:.2f}"
@@ -59,73 +59,13 @@ class ProfileDetailsView(views.DetailView):
             'medium_tasks_finished': medium_tasks_finished,
             'hard_tasks_finished': hard_tasks_finished,
             'advanced_tasks_finished': advanced_tasks_finished,
-            'unfinished_tasks': unfinished_tasks,
+            'outstanding_tasks': outstanding_tasks,
             'total_tasks': total_tasks,
             'finish_rate': finish_rate,
             'completed_tasks': completed_tasks,
         })
 
         return context
-
-    # def get_context_data(self, **kwargs):
-    #     context = super().get_context_data(**kwargs)
-    #     # self.object is a Profile instance
-    #     pets = list(Pet.objects.filter(user_id=self.object.user_id))
-    #
-    #     pet_photos = PetPhoto.objects \
-    #         .filter(tagged_pets__in=pets) \
-    #         .distinct()
-    #
-    #     total_likes_count = sum(pp.likes for pp in pet_photos)
-    #     total_pet_photos_count = len(pet_photos)
-    #
-    #     context.update({
-    #         'total_likes_count': total_likes_count,
-    #         'total_pet_photos_count': total_pet_photos_count,
-    #         'is_owner': self.object.user_id == self.request.user.id,
-    #         'pets': pets,
-    #     })
-    #
-    #     return context
-
-
-# def get_context_data(self, **kwargs):
-#     context = super().get_context_data(**kwargs)
-#     # self.object is a Profile instance
-#     # tasks = list(Task.objects.filter(user_id=self.object.user_id))
-#
-#
-#     return context
-
-
-# def delete_profile(request):
-#     return profile_action(request, DeleteProfileForm, 'index', get_profile(), 'main/profile_delete.html')
-
-# class DeleteProfileView(views.DeleteView):
-#     form_class = DeleteProfileForm
-#     model = Profile
-#     template_name = 'profile/delete-member.html'
-#     success_url = reverse_lazy('dashboard')
-
-# class DeleteProfileView(views.DeleteView):
-#     form_class = DeleteProfileForm
-#     model = Profile
-#     template_name = 'profile/delete-member.html'
-#     success_url = reverse_lazy('dashboard')
-#
-#     def form_valid(self, form):
-#         success_url = self.get_success_url()
-#         # form.update()
-#         # user_pk = form.instance.pk
-#         # user_pk = self.kwargs.get('pk')
-#
-#         profile = Profile.objects.get(pk=self.kwargs['pk'])
-#         profile.delete()
-#         return redirect(success_url)
-#
-#     def get_object(self, queryset=None):
-#         pk = self.request.POST['pk']
-#         return self.get_queryset().filter(pk=pk).get()
 
 
 class DeleteProfileFormView(views.FormView, LoginRequiredMixin):
@@ -145,16 +85,6 @@ class DeleteProfileFormView(views.FormView, LoginRequiredMixin):
 def post_delete_user(sender, instance, *args, **kwargs):
     if instance.user:  # just in case user is not specified
         instance.user.delete()
-
-
-# @login_required
-# def choose_profile_to_delete(request):
-#     pk = 1
-#     form_class = ListProfilesForm
-#     model = Profile
-#     template_name = 'profile/delete-member.html'
-#
-#     return redirect('delete a profile', pk)
 
 
 def logout_user(request):

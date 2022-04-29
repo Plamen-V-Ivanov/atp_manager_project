@@ -11,7 +11,6 @@
             </div>
 
 
-
             <div class="team-grid-info">
                 <div class="team-page-category">
                     Automation
@@ -42,7 +41,6 @@
                 </div>
 
             </div>
-
 
 
             <div class="team-grid-info">
@@ -113,7 +111,7 @@
 
             <div class="team-grid-info">
                 <div class="team-page-category">
-                    Graphics & Design
+                    Graphics and Design
                 </div>
                 <div>
 
@@ -133,7 +131,7 @@
                     {% if graphics_and_design_members_count == 1 %}
                         {{ graphics_and_design_members_count }} member
                     {% elif graphics_and_design_members_count == 0 %}
-                       -
+                        -
                     {% else %}
                         {{ graphics_and_design_members_count }} members
                     {% endif %}
@@ -193,60 +191,60 @@
 
             <div class="team-grid-statistics">
                 <div class="profileTextLabel">
-                    Automation
+                    Automation Tasks
                 </div>
                 <div class="profileTextInfo">
-                    {{ team.automation_tasks }}
+                    {{ automation_tasks }}
                 </div>
 
                 <div class="profileTextLabel">
-                    Graphics & Design
+                    Mechanical Tasks
                 </div>
                 <div class="profileTextInfo">
-                    16
-                </div>
-
-
-                <div class="profileTextLabel">
-                    Electrical
-                </div>
-                <div class="profileTextInfo">
-                    18
-                </div>
-
-                <div class="profileTextLabel">
-                    Mechanical:
-                </div>
-                <div class="profileTextInfo">
-                    20
-                </div>
-
-                <div class="profileTextLabel">
-                    Operational
-                </div>
-                <div class="profileTextInfo">
-                    38
-                </div>
-
-                <div class="profileTextLabel">
-                    Completed
-                </div>
-                <div class="profileTextInfo">
-                    100
+                    {{ mechanical_tasks }}
                 </div>
 
 
                 <div class="profileTextLabel">
-                    Outstanding:
+                    Electrical Tasks
                 </div>
                 <div class="profileTextInfo">
-                    5
+                    {{ electrical_tasks }}
+                </div>
+
+                <div class="profileTextLabel">
+                    Graphics and Design Tasks
+                </div>
+                <div class="profileTextInfo">
+                    {{ graphics_and_design_tasks }}
+                </div>
+
+                <div class="profileTextLabel">
+                    Operational Tasks
+                </div>
+                <div class="profileTextInfo">
+                    {{ operational_tasks }}
+                </div>
+
+                <div class="profileTextLabel">
+                    Completed Tasks
+                </div>
+                <div class="profileTextInfo">
+                    {{ completed_tasks }}
+                </div>
+
+
+                <div class="profileTextLabel">
+                    Outstanding Tasks
+                </div>
+                <div class="profileTextInfo">
+                    {{ outstanding_tasks }}
                 </div>
                 <div class="profileTextLabel">
                     Active Now
                 </div>
                 <div class="profileTextInfo">
-                    20
+                    {{ active_tasks }}
                 </div>
             </div>
         </div>

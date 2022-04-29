@@ -21,24 +21,6 @@
         </section>
 
 
-{#        <!-- Registration -->#}
-{#        <section id="registerPage">#}
-{#            <form method="POST" action="{% url 'home page' %}" enctype="multipart/form-data">#}
-{##}
-{#                <fieldset>#}
-{#                    <legend>Authorize</legend>#}
-{#                    <!-- Form for Registration -->#}
-{##}
-{#                    {{ form }}#}
-{#                    {% csrf_token %}#}
-{##}
-{#                    <!-- Button to Create Profile -->#}
-{#                    <button type="submit" class="register">Enter</button>#}
-{#                </fieldset>#}
-{#            </form>#}
-{#        </section>#}
-{#    </div>#}
-
     <section class="registerPage">
 
         <form method="POST" action="{% url 'login user' %}" enctype="multipart/form-data">

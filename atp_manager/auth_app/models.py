@@ -59,8 +59,6 @@ class Profile(models.Model):
     FIRST_NAME_MIN_LEN = 2
     LAST_NAME_MIN_LEN = 2
 
-    # CATEGORY_MAX_LEN = 100
-
     first_name = models.CharField(
         max_length=FIRST_NAME_MAX_LEN,
         verbose_name="First Name",
@@ -129,9 +127,3 @@ class Profile(models.Model):
 
     def __str__(self):
         return f'{self.first_name} {self.last_name} : {self.professional_skill}'
-
-    # def delete(self, *args, **kwargs):
-    #     self.user.delete()
-    #     return super(self.__class__, self).delete(*args, **kwargs)
-
-

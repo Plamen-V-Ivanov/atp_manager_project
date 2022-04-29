@@ -54,8 +54,9 @@
     /*text-align: center;*/
     /*margin: 10px;*/
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 55% 45%;
     grid-gap: 10px;
+    width: 100%;
 
 
 }
@@ -68,7 +69,7 @@
     grid-gap: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-
+    height: 160px;
 
 }
 

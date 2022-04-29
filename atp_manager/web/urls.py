@@ -22,7 +22,7 @@ from django.urls import path
 from atp_manager.web.views.generic import HomeView, AvailableTasksView, RunningTasksView, DashboardView, \
     DashboardManagerView, DashboardMemberView, HistoryView, RequestedTasksView, ClosedTasksView
 from atp_manager.web.views.task import CreateTaskView, EditTaskView, DeleteTaskView, take_task, close_task, \
-    approve_task_is_done, give_task, dont_approve_task_is_done, dont_give_task
+    approve_task_is_done, give_task, dont_approve_task_is_done, dont_give_task, drop_out_the_task
 from atp_manager.web.views.team import TeamView
 
 urlpatterns = [
@@ -46,6 +46,7 @@ urlpatterns = [
 
     path('task/approve/<int:pk>/', approve_task_is_done, name='approve task is finished'),
     path('task/dont/approve/<int:pk>/', dont_approve_task_is_done, name='dont approve task is finished'),
+    path('task/discontinue/<int:pk>/', drop_out_the_task, name='drop out the task'),
     path('task/give/<int:pk>/', give_task, name='give task'),
     path('task/dont/give/<int:pk>/', dont_give_task, name='dont give task'),
     path('task/take/<int:pk>/', take_task, name='take task'),

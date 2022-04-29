@@ -57,7 +57,7 @@ def approve_task_is_done(request, pk):
         task.is_approved_finished = True
         task.date_finished = datetime.datetime.now()
         task.save()
-    return redirect('dashboard')
+    return redirect('show closed tasks')
 
 
 @login_required
@@ -67,7 +67,17 @@ def dont_approve_task_is_done(request, pk):
         task = Task.objects.get(pk=pk)
         task.is_closed_for_approval = False
         task.save()
-    return redirect('dashboard')
+    return redirect('show closed tasks')
+
+
+@login_required
+def drop_out_the_task(request, pk):
+    if request.user.is_authenticated:
+        # if request.method == 'POST':
+        task = Task.objects.get(pk=pk)
+        task.is_outstanding = True
+        task.save()
+    return redirect('show requested tasks')
 
 
 @login_required
@@ -79,7 +89,7 @@ def give_task(request, pk):
         task.taken_by.add(profile)  # ?????????#
         # task.is_taken = True
         task.save()
-    return redirect('index')
+    return redirect('show requested tasks')
 
 
 @login_required
@@ -89,7 +99,7 @@ def dont_give_task(request, pk):
         # task.is_wanted = True
         task.is_wanted_by = None
         task.save()
-    return redirect('index')
+    return redirect('show requested tasks')
 
 
 @login_required
