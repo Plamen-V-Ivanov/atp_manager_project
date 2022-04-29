@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="add0612a-1ec2-4468-b916-a4b922434c15" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Advanced-Exam-24-October-2020/Problem_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Advanced-Exam-24-October-2020/Problem_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Exam_Python_Advanced/Solve.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Exam_Python_Advanced/Solve.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/02_Exercise/Spoopify/project/song.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/02_Exercise/Spoopify/project/song.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Document_Management/project/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Document_Management/project/category.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Document_Management/project/document.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Document_Management/project/document.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Document_Management/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Document_Management/project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Document_Management/project/storage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Document_Management/project/storage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Document_Management/project/topic.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Document_Management/project/topic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Gym/project/customer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Gym/project/customer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Gym/project/equipment.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Gym/project/equipment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Gym/project/exercise_plan.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Gym/project/exercise_plan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Gym/project/gym.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Gym/project/gym.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Gym/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Gym/project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Gym/project/subscription.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Gym/project/subscription.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Gym/project/trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Gym/project/trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Movie_World/project/customer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Movie_World/project/customer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Movie_World/project/dvd.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Movie_World/project/dvd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Movie_World/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Movie_World/project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Movie_World/project/movie_world.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/05_Exercise/Movie_World/project/movie_world.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Acount/Acount.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Acount/Acount.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Animals/project/animal.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Animals/project/animal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Animals/project/cat.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Animals/project/cat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Animals/project/dog.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Animals/project/dog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Animals/project/kitten.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Animals/project/kitten.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Animals/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Animals/project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Animals/project/tomcat.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Animals/project/tomcat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Groups/Groups.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Groups/Groups.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Vehicle/Vehicle.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Vehicle/Vehicle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Wild_Farm/project/animals/animal.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Wild_Farm/project/animals/animal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Wild_Farm/project/animals/birds.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Wild_Farm/project/animals/birds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Wild_Farm/project/animals/mammals.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Wild_Farm/project/animals/mammals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Wild_Farm/project/food.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Wild_Farm/project/food.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Wild_Farm/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/06_Exercise/Wild_Farm/project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Countdown_interator/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Countdown_interator/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Dictionary_interator/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Dictionary_interator/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Dictionary_interator/test_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Dictionary_interator/test_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Fibonacci_Generator/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Fibonacci_Generator/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Possible_Permutations/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Possible_Permutations/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Prime_Numbers/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Prime_Numbers/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Reader/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Reader/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Sequence_Repeat/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Sequence_Repeat/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Take_Halves/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Take_Halves/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Take_Skip/Take_Skip.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/07_Exercise/Take_Skip/Take_Skip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/08_Exercise/Bold_Italic_Underline.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/08_Exercise/Bold_Italic_Underline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/08_Exercise/Cache.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/08_Exercise/Cache.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/08_Exercise/Even_Parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/08_Exercise/Even_Parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/08_Exercise/HTML_Tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/08_Exercise/HTML_Tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/08_Exercise/Logged.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/08_Exercise/Logged.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/08_Exercise/Type_Check.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/08_Exercise/Type_Check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/08_Exercise/check_if_this_work.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/08_Exercise/check_if_this_work.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/OOP_Exams/Exam - 10 April 2021/01. Structure_Skeleton/exam_skeleton/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/OOP_Exams/Exam - 10 April 2021/01. Structure_Skeleton/exam_skeleton/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/OOP_Exams/Exam - 15 August 2021/01. Structure_Skeleton/exam_skeleton/project/common/validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/OOP_Exams/Exam - 15 August 2021/01. Structure_Skeleton/exam_skeleton/project/common/validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/OOP_Exams/Exam - 15 August 2021/01. Structure_Skeleton/exam_skeleton/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/OOP_Exams/Exam - 15 August 2021/01. Structure_Skeleton/exam_skeleton/project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/OOP_Exams/Regular_Exam/01. Structure_Skeleton/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/OOP_Exams/Regular_Exam/01. Structure_Skeleton/project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/OOP_Exams/Regular_Exam/03. Unit Testing_Skeleton/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/OOP_Exams/Regular_Exam/03. Unit Testing_Skeleton/project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/OOP_Exams/Retake Exam - 22 Aug 2020/01. Structure_Skeleton/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/OOP_Exams/Retake Exam - 22 Aug 2020/01. Structure_Skeleton/project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/OOP_Exams/Retake Exam - 23 August 2021/01. Structure_Skeleton/project/common/validator.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/OOP_Exams/Retake Exam - 23 August 2021/01. Structure_Skeleton/project/common/validator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python_OOP/OOP_Exams/Retake Exam - 23 August 2021/01. Structure_Skeleton/project/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python_OOP/OOP_Exams/Retake Exam - 23 August 2021/01. Structure_Skeleton/project/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/pg_stat_tmp/db_0.stat" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/pg_stat_tmp/db_0.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/pg_stat_tmp/db_13757.stat" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/pg_stat_tmp/db_13757.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/pg_stat_tmp/db_16559.stat" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/pg_stat_tmp/db_16559.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postgresql/pgdata/pg_stat_tmp/global.stat" beforeDir="false" afterPath="$PROJECT_DIR$/postgresql/pgdata/pg_stat_tmp/global.stat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../expenses_tracker/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../expenses_tracker/templates/base/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../petstagram/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../petstagram/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/project/unit_test_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/../project/project/unit_test_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/.idea/pythonProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject10/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject10/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject10/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject10/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject10/.idea/pythonProject10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject10/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject10/moving.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject11/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject11/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject11/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject11/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject11/.idea/pythonProject11.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject11/Exercise2-bad-solution-Errors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject11/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject12/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject12/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject12/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject12/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject12/.idea/pythonProject12.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject12/exercise3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject12/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject13/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject13/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject13/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject13/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject13/.idea/pythonProject13.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject13/exercise4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject13/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject14/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject14/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject14/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject14/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject14/.idea/pythonProject14.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject14/exercise5-not-Okay.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject14/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject15/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject15/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject15/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject15/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject15/.idea/pythonProject15.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject15/exercise7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject15/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject16/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject16/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject16/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject16/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject16/.idea/pythonProject16.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject16/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject17/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject17/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject17/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject17/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject17/.idea/pythonProject17.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject17/Exercise7-error.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject17/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject18/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject18/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject18/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject18/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject18/.idea/pythonProject18.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject18/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject19/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject19/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject19/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject19/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject19/.idea/pythonProject19.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject19/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject20/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject20/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject20/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject20/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject20/.idea/pythonProject20.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject20/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject21/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject21/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject21/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject21/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject21/.idea/pythonProject21.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject21/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject22/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject22/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject22/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject22/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject22/.idea/pythonProject22.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject22/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject23/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject23/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject23/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject23/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject23/.idea/pythonProject23.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject23/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject24/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject24/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject24/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject24/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject24/.idea/pythonProject24.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject24/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject25/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject25/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject25/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject25/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject25/.idea/pythonProject25.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject25/Special_number.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject25/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject26/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject26/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject26/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject26/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject26/.idea/pythonProject26.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject26/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject27/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject27/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject27/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject27/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject27/.idea/pythonProject27.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject27/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject28/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject28/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject28/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject28/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject28/.idea/pythonProject28.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject28/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject29/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject29/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject29/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject29/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject29/.idea/pythonProject29.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject29/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/.idea/pythonProject3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject3/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject30/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject30/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject30/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject30/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject30/.idea/pythonProject30.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject30/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject31/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject31/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject31/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject31/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject31/.idea/pythonProject31.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject31/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject32/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject32/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject32/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject32/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject32/.idea/pythonProject32.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject32/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject33/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject33/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject33/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject33/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject33/.idea/pythonProject33.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject33/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject34/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject34/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject34/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject34/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject34/.idea/pythonProject34.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject34/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject35/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject35/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject35/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject35/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject35/.idea/pythonProject35.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject35/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject36/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject36/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject36/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject36/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject36/.idea/pythonProject36.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject36/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject37/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject37/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject37/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject37/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject37/.idea/pythonProject37.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject37/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject38/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject38/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject38/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject38/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject38/.idea/pythonProject38.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject38/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject39/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject39/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject39/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject39/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject39/.idea/pythonProject39.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject39/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject4/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject4/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject4/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject4/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject4/.idea/pythonProject4.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject4/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject40/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject40/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject40/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject40/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject40/.idea/pythonProject40.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject40/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject41/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject41/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject41/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject41/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject41/.idea/pythonProject41.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject41/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject42/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject42/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject42/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject42/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject42/.idea/pythonProject42.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject42/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject42/zzz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject43/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject43/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject43/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject43/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject43/.idea/pythonProject43.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject43/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject44/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject44/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject44/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject44/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject44/.idea/pythonProject44.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject44/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject44/pythooooon" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject44/snowbow_fight.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject45/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject45/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject45/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject45/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject45/.idea/pythonProject45.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject45/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject46/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject46/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject46/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject46/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject46/.idea/pythonProject46.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject46/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject47/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject47/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject47/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject47/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject47/.idea/pythonProject47.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject47/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject48/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject48/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject48/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject48/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject48/.idea/pythonProject48.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject48/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject49/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject49/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject49/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject49/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject49/.idea/pythonProject49.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject49/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject5/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject5/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject5/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject5/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject5/.idea/pythonProject5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject5/3_excersize_8.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject5/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject50/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject50/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject50/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject50/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject50/.idea/pythonProject50.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject50/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject51/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject51/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject51/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject51/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject51/.idea/pythonProject51.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject51/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject52/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject52/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject52/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject52/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject52/.idea/pythonProject52.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject52/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject53/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject53/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject53/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject53/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject53/.idea/pythonProject53.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject53/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject54/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject54/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject54/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject54/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject54/.idea/pythonProject54.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject54/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject55/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject55/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject55/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject55/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject55/.idea/pythonProject55.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject55/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject55/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject56/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject56/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject56/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject56/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject56/.idea/pythonProject56.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject56/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject57/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject57/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject57/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject57/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject57/.idea/pythonProject57.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject57/10.Winning Ticket.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject57/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject6/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject6/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject6/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject6/.idea/pythonProject6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject6/clever_lily.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject6/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject7/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject7/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject7/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject7/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject7/.idea/pythonProject7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject7/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject8/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject8/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject8/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject8/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject8/.idea/pythonProject8.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject8/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject9/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject9/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject9/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject9/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject9/.idea/pythonProject9.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject9/graduation2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonProject9/main.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="27LEuhkXehpcltf3ZqA20sfKaPs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="repository&#10;directory" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/backup" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\omega\PycharmProjects\atp_manager\templates\backup" />
+      <recent name="C:\Users\omega\PycharmProjects\atp_manager\templates\web" />
+      <recent name="C:\Users\omega\PycharmProjects\atp_manager\templates\profile" />
+      <recent name="C:\Users\omega\PycharmProjects\atp_manager\templates" />
+      <recent name="C:\Users\omega\PycharmProjects\atp_manager\static\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\omega\PycharmProjects\atp_manager\atp_manager\common" />
+      <recent name="C:\Users\omega\PycharmProjects\atp_manager\atp_manager\common\mixins" />
+      <recent name="C:\Users\omega\PycharmProjects\atp_manager\templates" />
+      <recent name="C:\Users\omega\PycharmProjects\atp_manager\atp_manager" />
+      <recent name="C:\Users\omega\PycharmProjects\atp_manager" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django tests.Test: atp_manager.auth_app.tests.ProfileDetailsViewTests.test_expect_correct_template">
+    <configuration name="Test: atp_manager.auth_app.tests.ProfileDetailsViewTests" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="atp_manager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="atp_manager.auth_app.tests.ProfileDetailsViewTests" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: atp_manager.auth_app.tests.ProfileDetailsViewTests.test_expect_correct_template" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="atp_manager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="atp_manager.auth_app.tests.ProfileDetailsViewTests.test_expect_correct_template" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: atp_manager.auth_app.tests.ProfileDetailsViewTests.test_when_opening_not_existing_profile__expect_404" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="atp_manager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="atp_manager.auth_app.tests.ProfileDetailsViewTests.test_when_opening_not_existing_profile__expect_404" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: atp_manager.auth_app.tests.ProfileDetailsViewTests.test_when_user_is_owner__expect_is_owner_to_be_true" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="atp_manager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="atp_manager.auth_app.tests.ProfileDetailsViewTests.test_when_user_is_owner__expect_is_owner_to_be_true" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="base.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/atp_manager/templates/base/base.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="atp_manager" type="Python.DjangoServer" factoryName="Django server">
+      <module name="atp_manager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="atp_manager.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Django tests.Test: atp_manager.auth_app.tests.ProfileDetailsViewTests.test_expect_correct_template" />
+        <item itemvalue="Django tests.Test: atp_manager.auth_app.tests.ProfileDetailsViewTests.test_when_opening_not_existing_profile__expect_404" />
+        <item itemvalue="Django tests.Test: atp_manager.auth_app.tests.ProfileDetailsViewTests" />
+        <item itemvalue="Django tests.Test: atp_manager.auth_app.tests.ProfileDetailsViewTests.test_when_user_is_owner__expect_is_owner_to_be_true" />
+        <item itemvalue="JavaScript Debug.base.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="add0612a-1ec2-4468-b916-a4b922434c15" name="Changes" comment="" />
+      <created>1649091191629</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649091191629</updated>
+      <workItem from="1649091228197" duration="11566000" />
+      <workItem from="1649177379435" duration="198449000" />
+      <workItem from="1650219807329" duration="14000" />
+      <workItem from="1650443301638" duration="149400000" />
+      <workItem from="1650992010266" duration="57535000" />
+      <workItem from="1651271347824" duration="491000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Author.ColumnIdWidth" value="139" />
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="60" />
+                  <entry key="Table.Space.CommitStatus.ColumnIdWidth" value="41" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/atp_manager/web/views/generic.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/atp_manager/web/views/generic.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/atp_manager$Test__atp_manager_auth_app_tests_ProfileDetailsViewTests_test_when_user_is_owner__expect_is_owner_to_be_true.coverage" NAME="Test: atp_manager.auth_app.tests.ProfileDetailsViewTests.test_when_user_is_owner__expect_is_owner_to_be_true Coverage Results" MODIFIED="1651267236538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/atp_manager$Test__atp_manager_auth_app_tests_ProfileDetailsViewTests.coverage" NAME="Test: atp_manager.auth_app.tests.ProfileDetailsViewTests Coverage Results" MODIFIED="1651268707541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/atp_manager$Test__atp_manager_auth_app_tests_ProfileDetailsViewTests_test_expect_correct_template.coverage" NAME="Test: atp_manager.auth_app.tests.ProfileDetailsViewTests.test_expect_correct_template Coverage Results" MODIFIED="1651270560644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/atp_manager$Test__atp_manager_auth_app_tests_ProfileDetailsViewTests_test_when_opening_not_existing_profile__expect_404.coverage" NAME="Test: atp_manager.auth_app.tests.ProfileDetailsViewTests.test_when_opening_not_existing_profile__expect_404 Coverage Results" MODIFIED="1651269178434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>
